@@ -14,11 +14,13 @@ Model of the wumpus world represented as 4 by 4 matrix with cell in the matrix h
 			6. WumpusIndicator - To indicate if there exists a wumpus in the cell
 
 Conditions for different percepts
-			For case 1 - Both breeze and stench observed, Update wumpus and pit probabilities
+			
+			
+      			For case 1 - Both breeze and stench observed, Update wumpus and pit probabilities
 			  Then based on Wummpus and pit Probabilities try to finalize the position of wumpus and pit positions
 			  By calling finalizewumpus and finalizepit functions
 			
-      For case 2 - Only stench observed, Update wumpus probabilities
+			For case 2 - Only stench observed, Update wumpus probabilities
 			  Then based on Wummpus probability try to finalize the position of wumpus positions
 			  By calling finalizewumpus function
 			  Also since breeze not observed - eliminate possibility of breeze in neighboring cells
